@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color-glass/48/000000/school.png">
+        <meta name = "viewport" content="width = device-width, initial scale = 1.0">
+        <title>University Website Design</title>
+        <link rel = "stylesheet" href = "mystyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    </head>
+<body>
+    <section class = "header">
+        <nav>
+            <a href = "index.html"> <img src = "logo.png"></a>
+            
+            <div  class = "nav-links" id = "navlinks">
+                <i class="fas fa-times-circle" onclick="hidemenu()"></i>
+            <ul>
+                <li> <a href = ""> HOME</a></li>
+                <li> <a href = ""> ABOUT</a></li>
+                <li> <a href = ""> COURSES</a></li>
+                <li> <a href = ""> BLOG</a></li>
+                <li> <a href = ""> CONTENT</a></li>
+            </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showmenu()"></i>
+        </nav>
+    <div class = "text-box">
+        <h1>World's Biggest University</h1>
+        <p>Are you worrying about your child future well.... your concern is over.<br> Now you can rely on 
+            world's best University for your child
+        </p>
+        <a href= "" class = "hero-btn"> Visit our page to know more</a>
+    </div>
+    </section>
+
+    <!------COURSE--------->
+
+
+    <section class = "course">
+        <h1> Courses we offer </h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
+        <div class="row">
+
+
+        <div class="course-col">
+            <h3> Intermediate </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quae  harum aspernatur quibusdam deleniti sapiente vel. Magnam, numquam quis dolore  voluptates accusantium error fugit qui rerum tempora neque voluptas totam?</p>
+        </div>
+            <div class="course-col">
+            <h3> Degree </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quaeharum aspernatur quibusdam deleniti sapiente vel. Magnam, numquam quis dolore voluptates accusantium error fugit qui rerum tempora neque voluptas totam?</p>
+        </div>        
+            <div class="course-col">
+            <h3> Post Graduation </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quae harum aspernatur quibusdam deleniti sapiente vel. Magnam, numquam quis dolore voluptates accusantium error fugit qui rerum tempora neque voluptas totam?</p>
+        </div>
+
+        </div>
+    </section>
+
+
+        <!---CAMPUS-->
+
+<section class = "campus">
+    <h1> Our Global Campus</h1>
+    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+    <div class="row">
+        <div class="campus-col">
+            <img src="london.png">
+            <div class="layer"><h3>LONDON</h3></div>
+        </div>
+        <div class="campus-col">
+            <img src="washington.png">
+            <div class="layer"><h3>WASHINGTON</h3></div>
+        </div>
+        <div class="campus-col">
+            <img src="newyork.png">
+            <div class="layer"><h3>NEW YORK</h3></div>
+        </div>
+    </div>
+</section>
+
+    <!------JAVASCIPT---->
+
+    <script>
+
+        var navlinks = document.getElementById("navlinks");
+        function showmenu()
+        {
+            navlinks.style.right = "0";
+        }
+        function hidemenu()
+        {
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
