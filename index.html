@@ -1,191 +1,307 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color-glass/48/000000/school.png">
-        <meta name = "viewport" content="width = device-width, initial scale = 1.0">
-        <title>University Website Design</title>
-        <link rel = "stylesheet" href = "mystyle.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-        <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A world-class university with global campuses, modern facilities and programmes from intermediate to post graduation.">
+    <title>Eduford University | Shape Your Future</title>
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color-glass/48/000000/school.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="mystyle.css">
+</head>
 <body>
-    <section class = "header">
-        <nav>
-            <a href = "index.html"> <img src = "logo.png"></a>
-            
-            <div  class = "nav-links" id = "navlinks">
-                <i class="fas fa-times-circle" onclick="hidemenu()"></i>
-            <ul>
-                <li> <a href = ""> HOME</a></li>
-                <li> <a href = ""> ABOUT</a></li>
-                <li> <a href = ""> COURSES</a></li>
-                <li> <a href = ""> BLOG</a></li>
-                <li> <a href = ""> CONTENT</a></li>
-            </ul>
+
+    <!-- HEADER / HERO -->
+    <header class="header" id="home">
+        <nav id="navbar">
+            <a href="#home" class="logo"><img src="logo.png" alt="Eduford University logo"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="#home" onclick="hidemenu()">Home</a></li>
+                    <li><a href="#about" onclick="hidemenu()">About</a></li>
+                    <li><a href="#courses" onclick="hidemenu()">Courses</a></li>
+                    <li><a href="#campus" onclick="hidemenu()">Campus</a></li>
+                    <li><a href="#testimonials" onclick="hidemenu()">Stories</a></li>
+                    <li><a href="#contact" class="nav-cta" onclick="hidemenu()">Apply Now</a></li>
+                </ul>
             </div>
-            <i class="fas fa-bars" onclick="showmenu()"></i>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
         </nav>
-    <div class = "text-box">
-        <h1>World's Biggest University</h1>
-        <p>Are you worrying about your child future well.... your concern is over.<br> Now you can rely on 
-            world's best University for your child
-        </p>
-        <a href= "" class = "hero-btn"> Visit our page to know more</a>
-    </div>
+
+        <div class="text-box">
+            <span class="eyebrow">Admissions open for 2027</span>
+            <h1>Where Curious Minds<br>Become <em>Leaders</em></h1>
+            <p>Join a global community of thinkers, makers and changemakers. World-class faculty,
+                campuses across three cities, and a learning experience built around you.</p>
+            <div class="hero-actions">
+                <a href="#courses" class="hero-btn primary">Explore Programmes</a>
+                <a href="#about" class="hero-btn">Discover More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <a href="#about" class="scroll-down" aria-label="Scroll down"><span></span></a>
+    </header>
+
+    <!-- STATS -->
+    <section class="stats">
+        <div class="stat"><h2 data-count="45000">0</h2><p>Students enrolled</p></div>
+        <div class="stat"><h2 data-count="1200">0</h2><p>Expert faculty</p></div>
+        <div class="stat"><h2 data-count="120">0</h2><p>Countries represented</p></div>
+        <div class="stat"><h2 data-count="98" data-suffix="%">0</h2><p>Graduate employment</p></div>
     </section>
 
-    <!------COURSE--------->
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="about-img reveal">
+            <img src="about.jpg" alt="Faculty members meeting around a table">
+            <div class="badge"><strong>75+</strong><span>Years of<br>excellence</span></div>
+        </div>
+        <div class="about-text reveal">
+            <span class="section-tag">About us</span>
+            <h1>A legacy of learning, a future of possibility</h1>
+            <p>For over seven decades we have helped students discover what they are capable of.
+                Our teaching blends rigorous academics with real-world practice, so graduates leave
+                ready to lead in whatever field they choose.</p>
+            <ul class="checklist">
+                <li><i class="fa-solid fa-circle-check"></i> Internationally accredited degrees</li>
+                <li><i class="fa-solid fa-circle-check"></i> Small class sizes and personal mentoring</li>
+                <li><i class="fa-solid fa-circle-check"></i> Industry partnerships and paid internships</li>
+                <li><i class="fa-solid fa-circle-check"></i> Scholarships for outstanding applicants</li>
+            </ul>
+            <a href="#contact" class="hero-btn primary">Talk to Admissions</a>
+        </div>
+    </section>
 
-
-    <section class = "course">
-        <h1> Courses we offer </h1>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
+    <!-- COURSES -->
+    <section class="course" id="courses">
+        <span class="section-tag">Programmes</span>
+        <h1>Courses we offer</h1>
+        <p class="lead">Flexible pathways from your first step in higher education to advanced research.</p>
         <div class="row">
-
-
-        <div class="course-col">
-            <h3> Intermediate </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quae  harum aspernatur quibusdam deleniti sapiente vel. Magnam, numquam quis dolore  voluptates accusantium error fugit qui rerum tempora neque voluptas totam?</p>
-        </div>
-            <div class="course-col">
-            <h3> Degree </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quaeharum aspernatur quibusdam deleniti sapiente vel. Magnam, numquam quis dolore voluptates accusantium error fugit qui rerum tempora neque voluptas totam?</p>
-        </div>        
-            <div class="course-col">
-            <h3> Post Graduation </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quae harum aspernatur quibusdam deleniti sapiente vel. Magnam, numquam quis dolore voluptates accusantium error fugit qui rerum tempora neque voluptas totam?</p>
-        </div>
-
+            <div class="course-col reveal">
+                <div class="icon"><i class="fa-solid fa-book-open"></i></div>
+                <h3>Intermediate</h3>
+                <p>Build strong foundations in science, commerce and the humanities with guided study,
+                    hands-on labs and dedicated exam preparation.</p>
+                <a href="#contact" class="more">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="course-col featured reveal">
+                <span class="ribbon">Most popular</span>
+                <div class="icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <h3>Degree</h3>
+                <p>Over 80 undergraduate programmes across engineering, business, design, medicine
+                    and the arts, with options to study abroad at our global campuses.</p>
+                <a href="#contact" class="more">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="course-col reveal">
+                <div class="icon"><i class="fa-solid fa-flask"></i></div>
+                <h3>Post Graduation</h3>
+                <p>Specialise with master's and doctoral programmes led by renowned researchers,
+                    backed by modern labs and strong industry funding.</p>
+                <a href="#contact" class="more">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
         </div>
     </section>
 
-
-        <!---CAMPUS-->
-
-<section class = "campus">
-    <h1> Our Global Campus</h1>
-    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
-    <div class="row">
-        <div class="campus-col">
-            <img src="london.png">
-            <div class="layer"><h3>LONDON</h3></div>
-        </div>
-        <div class="campus-col">
-            <img src="washington.png">
-            <div class="layer"><h3>WASHINGTON</h3></div>
-        </div>
-        <div class="campus-col">
-            <img src="newyork.png">
-            <div class="layer"><h3>NEW YORK</h3></div>
-        </div>
-    </div>
-</section>
-
-
-        <!----FACILITIES-->
-
-
-<section class="facilities">
-    <h1> Our facilities</h1>
-    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
-    <div class="row">
-        <div class="facilities-col">
-            <img src = "library.png">
-            <h3>World Class Library</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, distinctio doloribus quos repellendus voluptas eveniet unde magnam recusandae. Excepturi enim vel odit, ipsum reiciendis expedita alias deserunt perspiciatis corrupti dolorum.</p>
-        </div>
-        <div class="facilities-col">
-            <img src = "basketball.png">
-            <h3>Largest PlayGround</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, distinctio doloribus quos repellendus voluptas eveniet unde magnam recusandae. Excepturi enim vel odit, ipsum reiciendis expedita alias deserunt perspiciatis corrupti dolorum.</p>
-        </div>
-        <div class="facilities-col">
-            <img src = "cafeteria.png">
-            <h3>Tasty and Healthy Food</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, distinctio doloribus quos repellendus voluptas eveniet unde magnam recusandae. Excepturi enim vel odit, ipsum reiciendis expedita alias deserunt perspiciatis corrupti dolorum.</p>
-        </div>
-    </div>
-</section>
-
-
-
-<!----TESTIMONIALS-->
-
-
-<section class="testimonials">
-    <h1> What our Students says</h1>
-    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
-
-
-    <div class="row">
-        <div class="testimonial-col">
-            <img src = "user1.jpg">
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis est, cumque asperiores laudantium, harum inventore doloribus a possimus unde quaerat animi repellat! Dolorum eligendi sint quas doloribus, facilis culpa. Placeat.</p>
-                <h3> Nobara Kugisaki </h3>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+    <!-- CAMPUS -->
+    <section class="campus" id="campus">
+        <span class="section-tag">Worldwide</span>
+        <h1>Our global campuses</h1>
+        <p class="lead">Study in some of the world's most inspiring cities.</p>
+        <div class="row">
+            <div class="campus-col reveal">
+                <img src="london.png" alt="London campus">
+                <div class="layer"><h3>London</h3><span>United Kingdom</span></div>
+            </div>
+            <div class="campus-col reveal">
+                <img src="washington.png" alt="Washington campus">
+                <div class="layer"><h3>Washington</h3><span>United States</span></div>
+            </div>
+            <div class="campus-col reveal">
+                <img src="newyork.png" alt="New York campus">
+                <div class="layer"><h3>New York</h3><span>United States</span></div>
             </div>
         </div>
-        <div class="testimonial-col">
-            <img src = "user2.jpg">
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis est, cumque asperiores laudantium, harum inventore doloribus a possimus unde quaerat animi repellat! Dolorum eligendi sint quas doloribus, facilis culpa. Placeat.</p>
-                <h3> Shoyo Hinata </h3>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
+    </section>
+
+    <!-- FACILITIES -->
+    <section class="facilities">
+        <span class="section-tag">Student life</span>
+        <h1>Our facilities</h1>
+        <p class="lead">Everything you need to learn, play and thrive, all in one place.</p>
+        <div class="row">
+            <div class="facilities-col reveal">
+                <div class="img-wrap"><img src="library.png" alt="University library"></div>
+                <h3>World-class library</h3>
+                <p>Over two million books and journals, quiet study pods and 24/7 digital access to
+                    leading research databases.</p>
+            </div>
+            <div class="facilities-col reveal">
+                <div class="img-wrap"><img src="basketball.png" alt="Sports ground"></div>
+                <h3>Largest playground</h3>
+                <p>Indoor courts, an Olympic-size pool and outdoor fields for over 30 sports clubs
+                    and inter-university leagues.</p>
+            </div>
+            <div class="facilities-col reveal">
+                <div class="img-wrap"><img src="cafeteria.png" alt="Cafeteria"></div>
+                <h3>Tasty, healthy food</h3>
+                <p>Fresh, nutritious meals from around the world, with vegetarian, vegan and
+                    allergy-friendly options every day.</p>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
+    <!-- CERTIFICATE -->
+    <section class="certificate">
+        <div class="cert-text reveal">
+            <span class="section-tag light">Recognised worldwide</span>
+            <h1>A degree that opens doors everywhere</h1>
+            <p>Our qualifications are recognised by employers and universities in over 120 countries,
+                giving you the freedom to build your career anywhere in the world.</p>
+            <a href="#contact" class="hero-btn">Start your journey</a>
+        </div>
+        <div class="cert-img reveal">
+            <img src="certificate.jpg" alt="Graduate holding a degree certificate">
+        </div>
+    </section>
 
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" id="testimonials">
+        <span class="section-tag">Student stories</span>
+        <h1>What our students say</h1>
+        <p class="lead">Hear from the people who know us best.</p>
+        <div class="row">
+            <div class="testimonial-col reveal">
+                <i class="fa-solid fa-quote-left quote"></i>
+                <p>The professors here genuinely care. I came in unsure of my path and left with a
+                    research publication, a job offer and friends from all over the world.</p>
+                <div class="person">
+                    <img src="user1.jpg" alt="Nobara Kugisaki">
+                    <div>
+                        <h3>Nobara Kugisaki</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-col reveal">
+                <i class="fa-solid fa-quote-left quote"></i>
+                <p>Studying a semester in London changed my perspective completely. The campus life,
+                    the sports teams and the mentoring made every day exciting.</p>
+                <div class="person">
+                    <img src="user2.jpg" alt="Shoyo Hinata">
+                    <div>
+                        <h3>Shoyo Hinata</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!--CALL TO ACTION-->
+    <!-- CALL TO ACTION -->
+    <section class="cta" id="contact">
+        <h1>Enroll in our online courses<br>from anywhere in the world</h1>
+        <p>Applications for the 2027 intake are open. Speak to an advisor today.</p>
+        <form class="cta-form" onsubmit="event.preventDefault(); this.innerHTML = '<p class=&quot;thanks&quot;><i class=&quot;fa-solid fa-circle-check&quot;></i> Thank you! Our admissions team will be in touch soon.</p>';">
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit" class="hero-btn primary">Contact Us</button>
+        </form>
+    </section>
 
-
-
-<section class="cta">
-    <h1> Enroll for our various Online courses <br> anywhere from the world</h1>
-    <a href="" class="hero-btn"> CONTACT US </a>
-</section>
-    <!------JAVASCIPT---->
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <img src="logo.png" alt="Eduford University logo" class="footer-logo">
+                <p>Inspiring curious minds to become tomorrow's leaders since 1951.</p>
+                <div class="icons">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#campus">Campuses</a></li>
+                    <li><a href="#testimonials">Student stories</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> 21 University Ave, London</li>
+                    <li><i class="fa-solid fa-phone"></i> +44 20 7946 0000</li>
+                    <li><i class="fa-solid fa-envelope"></i> admissions@eduford.edu</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">&copy; <span id="year"></span> Eduford University. All rights reserved.</div>
+    </footer>
 
     <script>
+        var navlinks = document.getElementById("navlinks");
+        var navbar = document.getElementById("navbar");
 
-        var navlinks = docu>ment.getElementById("navlinks");
-        function showmenu()
-        {
-            navlinks.style.right = "0";
+        function showmenu() {
+            navlinks.classList.add("open");
         }
-        function hidemenu()
-        {
-            navlinks.style.right = "-200px";
+        function hidemenu() {
+            navlinks.classList.remove("open");
         }
+
+        // Solid navbar once the user scrolls past the top
+        window.addEventListener("scroll", function () {
+            navbar.classList.toggle("scrolled", window.scrollY > 60);
+        });
+
+        // Fade sections in as they enter the viewport
+        var revealObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        document.querySelectorAll(".reveal").forEach(function (el) {
+            revealObserver.observe(el);
+        });
+
+        // Count up the stats once they are visible
+        var statObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (!entry.isIntersecting) return;
+                var el = entry.target;
+                var target = +el.dataset.count;
+                var suffix = el.dataset.suffix || "+";
+                var start = performance.now();
+                function tick(now) {
+                    var progress = Math.min((now - start) / 1600, 1);
+                    var value = Math.floor(target * (1 - Math.pow(1 - progress, 3)));
+                    el.textContent = value.toLocaleString() + suffix;
+                    if (progress < 1) requestAnimationFrame(tick);
+                }
+                requestAnimationFrame(tick);
+                statObserver.unobserve(el);
+            });
+        }, { threshold: 0.5 });
+        document.querySelectorAll("[data-count]").forEach(function (el) {
+            statObserver.observe(el);
+        });
+
+        document.getElementById("year").textContent = new Date().getFullYear();
     </script>
-
-
-   <!--FOOTER-->
-
-
-<section class="footer">
-    <h4>About us</h4>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis est, cumque asperiores laudantium, harum inventore doloribus a possimus<br> unde quaerat animi repellat! Dolorum eligendi sint quas doloribus, facilis culpa. Placeat.</p>
-    <div class="icons">
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-linkedin"></i>
-    </div>
-</section>
 </body>
 </html>
